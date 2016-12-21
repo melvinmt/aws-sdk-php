@@ -1,17 +1,17 @@
 <?php
-namespace Aws\S3;
+namespace AwsSDK\S3;
 
-use Aws\CommandInterface;
-use Aws\Exception\AwsException;
-use Aws\HandlerList;
-use Aws\ResultInterface;
-use Aws\S3\Exception\S3Exception;
+use AwsSDK\CommandInterface;
+use AwsSDK\Exception\AwsException;
+use AwsSDK\HandlerList;
+use AwsSDK\ResultInterface;
+use AwsSDK\S3\Exception\S3Exception;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Promise\RejectedPromise;
 
 /**
  * A trait providing S3-specific functionality. This is meant to be used in
- * classes implementing \Aws\S3\S3ClientInterface
+ * classes implementing \AwsSDK\S3\S3ClientInterface
  */
 trait S3ClientTrait
 {
@@ -105,7 +105,7 @@ trait S3ClientTrait
         $iter = $this->getIterator('ListObjects', $params);
 
         if ($regex) {
-            $iter = \Aws\filter($iter, function ($c) use ($regex) {
+            $iter = \AwsSDK\filter($iter, function ($c) use ($regex) {
                 return preg_match($regex, $c['Key']);
             });
         }

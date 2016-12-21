@@ -1,8 +1,8 @@
 <?php
-namespace Aws\Signature;
+namespace AwsSDK\Signature;
 
-use Aws\Credentials\CredentialsInterface;
-use Aws\Exception\CouldNotCreateChecksumException;
+use AwsSDK\Credentials\CredentialsInterface;
+use AwsSDK\Exception\CouldNotCreateChecksumException;
 use GuzzleHttp\Psr7;
 use Psr\Http\Message\RequestInterface;
 

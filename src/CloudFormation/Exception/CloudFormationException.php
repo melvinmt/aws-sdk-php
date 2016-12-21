@@ -1,7 +1,7 @@
 <?php
-namespace Aws\CloudFormation\Exception;
+namespace AwsSDK\CloudFormation\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the AWS CloudFormation service.

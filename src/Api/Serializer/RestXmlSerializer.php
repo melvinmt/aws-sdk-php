@@ -1,8 +1,8 @@
 <?php
-namespace Aws\Api\Serializer;
+namespace AwsSDK\Api\Serializer;
 
-use Aws\Api\StructureShape;
-use Aws\Api\Service;
+use AwsSDK\Api\StructureShape;
+use AwsSDK\Api\Service;
 
 /**
  * @internal

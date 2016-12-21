@@ -1,7 +1,7 @@
 <?php
-namespace Aws\Sts\Exception;
+namespace AwsSDK\Sts\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * AWS Security Token Service exception.

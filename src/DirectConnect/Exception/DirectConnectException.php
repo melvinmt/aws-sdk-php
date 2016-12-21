@@ -1,7 +1,7 @@
 <?php
-namespace Aws\DirectConnect\Exception;
+namespace AwsSDK\DirectConnect\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the AWS Direct Connect service.

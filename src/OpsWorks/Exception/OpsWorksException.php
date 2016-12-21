@@ -1,7 +1,7 @@
 <?php
-namespace Aws\OpsWorks\Exception;
+namespace AwsSDK\OpsWorks\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the AWS OpsWorks service.

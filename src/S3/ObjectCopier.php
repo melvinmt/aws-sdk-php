@@ -1,9 +1,9 @@
 <?php
-namespace Aws\S3;
+namespace AwsSDK\S3;
 
-use Aws\Exception\MultipartUploadException;
-use Aws\Result;
-use Aws\S3\Exception\S3Exception;
+use AwsSDK\Exception\MultipartUploadException;
+use AwsSDK\Result;
+use AwsSDK\S3\Exception\S3Exception;
 use GuzzleHttp\Promise\PromisorInterface;
 use InvalidArgumentException;
 
@@ -125,7 +125,7 @@ class ObjectCopier implements PromisorInterface
     {
         if (empty($location['Bucket']) || empty($location['Key'])) {
             throw new \InvalidArgumentException('Locations provided to an'
-                . ' Aws\S3\ObjectCopier must have a non-empty Bucket and Key');
+                . ' AwsSDK\S3\ObjectCopier must have a non-empty Bucket and Key');
         }
     }
 

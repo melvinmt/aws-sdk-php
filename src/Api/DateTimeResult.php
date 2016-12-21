@@ -1,5 +1,5 @@
 <?php
-namespace Aws\Api;
+namespace AwsSDK\Api;
 
 /**
  * DateTime overrides that make DateTime work more seamlessly as a string,

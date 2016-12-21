@@ -1,5 +1,5 @@
 <?php
-namespace Aws\Api;
+namespace AwsSDK\Api;
 
 use Aws;
 
@@ -120,7 +120,7 @@ class Validator
     {
         if (!is_array($value)) {
             $this->addError('must be an array. Found '
-                . Aws\describe_type($value));
+                . AwsSDK\describe_type($value));
             return;
         }
 
@@ -163,7 +163,7 @@ class Validator
                 $this->addError('must be an fopen resource, a '
                     . 'GuzzleHttp\Stream\StreamInterface object, or something '
                     . 'that can be cast to a string. Found '
-                    . Aws\describe_type($value));
+                    . AwsSDK\describe_type($value));
             }
         }
     }
@@ -172,7 +172,7 @@ class Validator
     {
         if (!is_numeric($value)) {
             $this->addError('must be numeric. Found '
-                . Aws\describe_type($value));
+                . AwsSDK\describe_type($value));
             return;
         }
 
@@ -183,7 +183,7 @@ class Validator
     {
         if (!is_bool($value)) {
             $this->addError('must be a boolean. Found '
-                . Aws\describe_type($value));
+                . AwsSDK\describe_type($value));
         }
     }
 
@@ -191,7 +191,7 @@ class Validator
     {
         if (!$this->checkCanString($value)) {
             $this->addError('must be a string or an object that implements '
-                . '__toString(). Found ' . Aws\describe_type($value));
+                . '__toString(). Found ' . AwsSDK\describe_type($value));
             return;
         }
 
@@ -243,7 +243,7 @@ class Validator
     {
         if (!is_array($value) || isset($value[0])) {
             $this->addError('must be an associative array. Found '
-                . Aws\describe_type($value));
+                . AwsSDK\describe_type($value));
             return false;
         }
 

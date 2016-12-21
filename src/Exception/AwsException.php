@@ -1,10 +1,10 @@
 <?php
-namespace Aws\Exception;
+namespace AwsSDK\Exception;
 
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\RequestInterface;
-use Aws\CommandInterface;
-use Aws\ResultInterface;
+use AwsSDK\CommandInterface;
+use AwsSDK\ResultInterface;
 
 /**
  * Represents an AWS exception that is thrown when a command fails.

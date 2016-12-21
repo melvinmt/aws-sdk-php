@@ -1,7 +1,7 @@
 <?php
-namespace Aws\Acm\Exception;
+namespace AwsSDK\Acm\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the **AWS Certificate Manager** service.

@@ -1,5 +1,5 @@
 <?php
-namespace Aws\Api;
+namespace AwsSDK\Api;
 
 /**
  * Base class that is used by most API shapes

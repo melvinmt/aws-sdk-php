@@ -1,7 +1,7 @@
 <?php
-namespace Aws\Support\Exception;
+namespace AwsSDK\Support\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * AWS Support service exception.

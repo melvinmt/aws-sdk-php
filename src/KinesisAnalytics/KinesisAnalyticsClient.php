@@ -1,35 +1,35 @@
 <?php
-namespace Aws\KinesisAnalytics;
+namespace AwsSDK\KinesisAnalytics;
 
-use Aws\AwsClient;
+use AwsSDK\AwsClient;
 
 /**
  * This client is used to interact with the **Amazon Kinesis Analytics** service.
- * @method \Aws\Result addApplicationInput(array $args = [])
+ * @method \AwsSDK\Result addApplicationInput(array $args = [])
  * @method \GuzzleHttp\Promise\Promise addApplicationInputAsync(array $args = [])
- * @method \Aws\Result addApplicationOutput(array $args = [])
+ * @method \AwsSDK\Result addApplicationOutput(array $args = [])
  * @method \GuzzleHttp\Promise\Promise addApplicationOutputAsync(array $args = [])
- * @method \Aws\Result addApplicationReferenceDataSource(array $args = [])
+ * @method \AwsSDK\Result addApplicationReferenceDataSource(array $args = [])
  * @method \GuzzleHttp\Promise\Promise addApplicationReferenceDataSourceAsync(array $args = [])
- * @method \Aws\Result createApplication(array $args = [])
+ * @method \AwsSDK\Result createApplication(array $args = [])
  * @method \GuzzleHttp\Promise\Promise createApplicationAsync(array $args = [])
- * @method \Aws\Result deleteApplication(array $args = [])
+ * @method \AwsSDK\Result deleteApplication(array $args = [])
  * @method \GuzzleHttp\Promise\Promise deleteApplicationAsync(array $args = [])
- * @method \Aws\Result deleteApplicationOutput(array $args = [])
+ * @method \AwsSDK\Result deleteApplicationOutput(array $args = [])
  * @method \GuzzleHttp\Promise\Promise deleteApplicationOutputAsync(array $args = [])
- * @method \Aws\Result deleteApplicationReferenceDataSource(array $args = [])
+ * @method \AwsSDK\Result deleteApplicationReferenceDataSource(array $args = [])
  * @method \GuzzleHttp\Promise\Promise deleteApplicationReferenceDataSourceAsync(array $args = [])
- * @method \Aws\Result describeApplication(array $args = [])
+ * @method \AwsSDK\Result describeApplication(array $args = [])
  * @method \GuzzleHttp\Promise\Promise describeApplicationAsync(array $args = [])
- * @method \Aws\Result discoverInputSchema(array $args = [])
+ * @method \AwsSDK\Result discoverInputSchema(array $args = [])
  * @method \GuzzleHttp\Promise\Promise discoverInputSchemaAsync(array $args = [])
- * @method \Aws\Result listApplications(array $args = [])
+ * @method \AwsSDK\Result listApplications(array $args = [])
  * @method \GuzzleHttp\Promise\Promise listApplicationsAsync(array $args = [])
- * @method \Aws\Result startApplication(array $args = [])
+ * @method \AwsSDK\Result startApplication(array $args = [])
  * @method \GuzzleHttp\Promise\Promise startApplicationAsync(array $args = [])
- * @method \Aws\Result stopApplication(array $args = [])
+ * @method \AwsSDK\Result stopApplication(array $args = [])
  * @method \GuzzleHttp\Promise\Promise stopApplicationAsync(array $args = [])
- * @method \Aws\Result updateApplication(array $args = [])
+ * @method \AwsSDK\Result updateApplication(array $args = [])
  * @method \GuzzleHttp\Promise\Promise updateApplicationAsync(array $args = [])
  */
 class KinesisAnalyticsClient extends AwsClient {}

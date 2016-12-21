@@ -1,7 +1,7 @@
 <?php
-namespace Aws\ApiGateway\Exception;
+namespace AwsSDK\ApiGateway\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the **AWS API Gateway** service.

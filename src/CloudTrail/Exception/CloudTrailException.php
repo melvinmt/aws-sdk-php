@@ -1,7 +1,7 @@
 <?php
-namespace Aws\CloudTrail\Exception;
+namespace AwsSDK\CloudTrail\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the AWS CloudTrail service.

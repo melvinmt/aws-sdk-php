@@ -1,8 +1,8 @@
 <?php
-namespace Aws\Api\Parser;
+namespace AwsSDK\Api\Parser;
 
-use Aws\Api\StructureShape;
-use Aws\Api\Service;
+use AwsSDK\Api\StructureShape;
+use AwsSDK\Api\Service;
 use Psr\Http\Message\ResponseInterface;
 
 /**

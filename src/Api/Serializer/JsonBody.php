@@ -1,9 +1,9 @@
 <?php
-namespace Aws\Api\Serializer;
+namespace AwsSDK\Api\Serializer;
 
-use Aws\Api\Service;
-use Aws\Api\Shape;
-use Aws\Api\TimestampShape;
+use AwsSDK\Api\Service;
+use AwsSDK\Api\Shape;
+use AwsSDK\Api\TimestampShape;
 
 /**
  * Formats the JSON body of a JSON-REST or JSON-RPC operation.

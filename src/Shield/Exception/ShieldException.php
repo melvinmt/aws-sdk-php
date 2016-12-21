@@ -1,7 +1,7 @@
 <?php
-namespace Aws\Shield\Exception;
+namespace AwsSDK\Shield\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the **AWS Shield** service.

@@ -1,7 +1,7 @@
 <?php
-namespace Aws\CloudHsm\Exception;
+namespace AwsSDK\CloudHsm\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * AWS CloudHSM exception.

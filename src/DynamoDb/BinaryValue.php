@@ -1,5 +1,5 @@
 <?php
-namespace Aws\DynamoDb;
+namespace AwsSDK\DynamoDb;
 
 use GuzzleHttp\Psr7;
 

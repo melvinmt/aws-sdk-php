@@ -1,8 +1,8 @@
 <?php
-namespace Aws\Api\Serializer;
+namespace AwsSDK\Api\Serializer;
 
-use Aws\Api\Service;
-use Aws\CommandInterface;
+use AwsSDK\Api\Service;
+use AwsSDK\CommandInterface;
 use GuzzleHttp\Psr7\Request;
 use Psr\Http\Message\RequestInterface;
 

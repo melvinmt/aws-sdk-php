@@ -1,11 +1,11 @@
 <?php
-namespace Aws\Api\Serializer;
+namespace AwsSDK\Api\Serializer;
 
-use Aws\Api\StructureShape;
-use Aws\Api\ListShape;
-use Aws\Api\MapShape;
-use Aws\Api\Shape;
-use Aws\Api\TimestampShape;
+use AwsSDK\Api\StructureShape;
+use AwsSDK\Api\ListShape;
+use AwsSDK\Api\MapShape;
+use AwsSDK\Api\Shape;
+use AwsSDK\Api\TimestampShape;
 
 /**
  * @internal

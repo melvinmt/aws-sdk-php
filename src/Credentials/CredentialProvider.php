@@ -1,18 +1,18 @@
 <?php
-namespace Aws\Credentials;
+namespace AwsSDK\Credentials;
 
 use Aws;
-use Aws\CacheInterface;
-use Aws\Exception\CredentialsException;
+use AwsSDK\CacheInterface;
+use AwsSDK\Exception\CredentialsException;
 use GuzzleHttp\Promise;
 
 /**
  * Credential providers are functions that accept no arguments and return a
- * promise that is fulfilled with an {@see \Aws\Credentials\CredentialsInterface}
- * or rejected with an {@see \Aws\Exception\CredentialsException}.
+ * promise that is fulfilled with an {@see \AwsSDK\Credentials\CredentialsInterface}
+ * or rejected with an {@see \AwsSDK\Exception\CredentialsException}.
  *
  * <code>
- * use Aws\Credentials\CredentialProvider;
+ * use AwsSDK\Credentials\CredentialProvider;
  * $provider = CredentialProvider::defaultProvider();
  * // Returns a CredentialsInterface or throws.
  * $creds = $provider()->wait();
@@ -21,7 +21,7 @@ use GuzzleHttp\Promise;
  * Credential providers can be composed to create credentials using conditional
  * logic that can create different credentials in different environments. You
  * can compose multiple providers into a single provider using
- * {@see Aws\Credentials\CredentialProvider::chain}. This function accepts
+ * {@see AwsSDK\Credentials\CredentialProvider::chain}. This function accepts
  * providers as variadic arguments and returns a new function that will invoke
  * each provider until a successful set of credentials is returned.
  *
@@ -163,7 +163,7 @@ class CredentialProvider
 
     /**
      * Wraps a credential provider and saves provided credentials in an
-     * instance of Aws\CacheInterface. Forwards calls when no credentials found
+     * instance of AwsSDK\CacheInterface. Forwards calls when no credentials found
      * in cache and updates cache with the results.
      *
      * Defaults to using a simple file-based cache when none provided.
@@ -234,7 +234,7 @@ class CredentialProvider
      * @param array $config Array of configuration data.
      *
      * @return InstanceProfileProvider
-     * @see Aws\Credentials\InstanceProfileProvider for $config details.
+     * @see AwsSDK\Credentials\InstanceProfileProvider for $config details.
      */
     public static function instanceProfile(array $config = [])
     {
@@ -249,7 +249,7 @@ class CredentialProvider
      * @param array $config Array of configuration data.
      *
      * @return EcsCredentialProvider
-     * @see Aws\Credentials\EcsCredentialProvider for $config details.
+     * @see AwsSDK\Credentials\EcsCredentialProvider for $config details.
      */
     public static function ecsCredentials(array $config = [])
     {
@@ -314,8 +314,8 @@ class CredentialProvider
      * @param array $config Array of configuration data.
      *
      * @return array
-     * @see Aws\Credentials\InstanceProfileProvider for $config details.
-     * @see Aws\Credentials\EcsCredentialProvider for $config details.
+     * @see AwsSDK\Credentials\InstanceProfileProvider for $config details.
+     * @see AwsSDK\Credentials\EcsCredentialProvider for $config details.
      */
     private static function remoteCredentialProviders(array $config = [])
     {

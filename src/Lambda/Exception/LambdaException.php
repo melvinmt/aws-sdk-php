@@ -1,7 +1,7 @@
 <?php
-namespace Aws\Lambda\Exception;
+namespace AwsSDK\Lambda\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with AWS Lambda

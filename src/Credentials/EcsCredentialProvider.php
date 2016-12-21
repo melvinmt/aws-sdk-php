@@ -1,7 +1,7 @@
 <?php
-namespace Aws\Credentials;
+namespace AwsSDK\Credentials;
 
-use Aws\Exception\CredentialsException;
+use AwsSDK\Exception\CredentialsException;
 use GuzzleHttp\Promise;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Promise\PromiseInterface;
@@ -31,7 +31,7 @@ class EcsCredentialProvider
         $this->timeout = isset($config['timeout']) ? $config['timeout'] : 1.0;
         $this->client = isset($config['client'])
             ? $config['client']
-            : \Aws\default_http_handler();
+            : \AwsSDK\default_http_handler();
     }
 
     /**

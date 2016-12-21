@@ -1,7 +1,7 @@
 <?php
-namespace Aws\Rds\Exception;
+namespace AwsSDK\Rds\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the Amazon Relational Database Service.

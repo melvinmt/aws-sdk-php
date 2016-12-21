@@ -1,7 +1,7 @@
 <?php
-namespace Aws\Health\Exception;
+namespace AwsSDK\Health\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the **AWS Health APIs and Notifications** service.

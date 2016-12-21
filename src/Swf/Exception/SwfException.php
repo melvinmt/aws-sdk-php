@@ -1,7 +1,7 @@
 <?php
-namespace Aws\Swf\Exception;
+namespace AwsSDK\Swf\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the Amazon Simple Workflow Service.

@@ -1,7 +1,7 @@
 <?php
-namespace Aws\Route53Domains\Exception;
+namespace AwsSDK\Route53Domains\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the Amazon Route 53 Domains service.

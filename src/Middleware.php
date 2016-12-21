@@ -1,10 +1,10 @@
 <?php
 namespace Aws;
 
-use Aws\Api\Service;
-use Aws\Api\Validator;
-use Aws\Credentials\CredentialsInterface;
-use Aws\Exception\AwsException;
+use AwsSDK\Api\Service;
+use AwsSDK\Api\Validator;
+use AwsSDK\Credentials\CredentialsInterface;
+use AwsSDK\Exception\AwsException;
 use GuzzleHttp\Promise;
 use GuzzleHttp\Psr7;
 use GuzzleHttp\Psr7\LazyOpenStream;
@@ -318,8 +318,8 @@ final class Middleware
     /**
      * Creates a middleware that applies a map function to results.
      *
-     * @param callable $f Map function that accepts an Aws\ResultInterface and
-     *                    returns an Aws\ResultInterface.
+     * @param callable $f Map function that accepts an AwsSDK\ResultInterface and
+     *                    returns an AwsSDK\ResultInterface.
      *
      * @return callable
      */

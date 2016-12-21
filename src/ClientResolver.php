@@ -1,17 +1,17 @@
 <?php
 namespace Aws;
 
-use Aws\Api\Validator;
-use Aws\Api\ApiProvider;
-use Aws\Api\Service;
-use Aws\Credentials\Credentials;
-use Aws\Credentials\CredentialsInterface;
-use Aws\Endpoint\Partition;
-use Aws\Endpoint\PartitionEndpointProvider;
-use Aws\Endpoint\PartitionProviderInterface;
-use Aws\Signature\SignatureProvider;
-use Aws\Endpoint\EndpointProvider;
-use Aws\Credentials\CredentialProvider;
+use AwsSDK\Api\Validator;
+use AwsSDK\Api\ApiProvider;
+use AwsSDK\Api\Service;
+use AwsSDK\Credentials\Credentials;
+use AwsSDK\Credentials\CredentialsInterface;
+use AwsSDK\Endpoint\Partition;
+use AwsSDK\Endpoint\PartitionEndpointProvider;
+use AwsSDK\Endpoint\PartitionProviderInterface;
+use AwsSDK\Signature\SignatureProvider;
+use AwsSDK\Endpoint\EndpointProvider;
+use AwsSDK\Credentials\CredentialProvider;
 use GuzzleHttp\Promise;
 use InvalidArgumentException as IAE;
 use Psr\Http\Message\RequestInterface;
@@ -39,7 +39,7 @@ class ClientResolver
         'service' => [
             'type'     => 'value',
             'valid'    => ['string'],
-            'doc'      => 'Name of the service to utilize. This value will be supplied by default when using one of the SDK clients (e.g., Aws\\S3\\S3Client).',
+            'doc'      => 'Name of the service to utilize. This value will be supplied by default when using one of the SDK clients (e.g., AwsSDK\\S3\\S3Client).',
             'required' => true,
             'internal' => true
         ],
@@ -47,7 +47,7 @@ class ClientResolver
             'type'     => 'value',
             'valid'    => ['string'],
             'doc'      => 'Exception class to create when an error occurs.',
-            'default'  => 'Aws\Exception\AwsException',
+            'default'  => 'AwsSDK\Exception\AwsException',
             'internal' => true
         ],
         'scheme' => [
@@ -77,14 +77,14 @@ class ClientResolver
         'signature_provider' => [
             'type'    => 'value',
             'valid'   => ['callable'],
-            'doc'     => 'A callable that accepts a signature version name (e.g., "v4"), a service name, and region, and  returns a SignatureInterface object or null. This provider is used to create signers utilized by the client. See Aws\\Signature\\SignatureProvider for a list of built-in providers',
+            'doc'     => 'A callable that accepts a signature version name (e.g., "v4"), a service name, and region, and  returns a SignatureInterface object or null. This provider is used to create signers utilized by the client. See AwsSDK\\Signature\\SignatureProvider for a list of built-in providers',
             'default' => [__CLASS__, '_default_signature_provider'],
         ],
         'endpoint_provider' => [
             'type'     => 'value',
             'valid'    => ['callable'],
             'fn'       => [__CLASS__, '_apply_endpoint_provider'],
-            'doc'      => 'An optional PHP callable that accepts a hash of options including a "service" and "region" key and returns NULL or a hash of endpoint data, of which the "endpoint" key is required. See Aws\\Endpoint\\EndpointProvider for a list of built-in providers.',
+            'doc'      => 'An optional PHP callable that accepts a hash of options including a "service" and "region" key and returns NULL or a hash of endpoint data, of which the "endpoint" key is required. See AwsSDK\\Endpoint\\EndpointProvider for a list of built-in providers.',
             'default' => [__CLASS__, '_default_endpoint_provider'],
         ],
         'api_provider' => [
@@ -121,7 +121,7 @@ class ClientResolver
         'credentials' => [
             'type'    => 'value',
             'valid'   => [CredentialsInterface::class, CacheInterface::class, 'array', 'bool', 'callable'],
-            'doc'     => 'Specifies the credentials used to sign requests. Provide an Aws\Credentials\CredentialsInterface object, an associative array of "key", "secret", and an optional "token" key, `false` to use null credentials, or a callable credentials provider used to create credentials or return null. See Aws\\Credentials\\CredentialProvider for a list of built-in credentials providers. If no credentials are provided, the SDK will attempt to load them from the environment.',
+            'doc'     => 'Specifies the credentials used to sign requests. Provide an AwsSDK\Credentials\CredentialsInterface object, an associative array of "key", "secret", and an optional "token" key, `false` to use null credentials, or a callable credentials provider used to create credentials or return null. See AwsSDK\\Credentials\\CredentialProvider for a list of built-in credentials providers. If no credentials are provided, the SDK will attempt to load them from the environment.',
             'fn'      => [__CLASS__, '_apply_credentials'],
             'default' => [CredentialProvider::class, 'defaultProvider'],
         ],
@@ -167,7 +167,7 @@ class ClientResolver
         'handler' => [
             'type'     => 'value',
             'valid'    => ['callable'],
-            'doc'      => 'A handler that accepts a command object, request object and returns a promise that is fulfilled with an Aws\ResultInterface object or rejected with an Aws\Exception\AwsException. A handler does not accept a next handler as it is terminal and expected to fulfill a command. If no handler is provided, a default Guzzle handler will be utilized.',
+            'doc'      => 'A handler that accepts a command object, request object and returns a promise that is fulfilled with an AwsSDK\ResultInterface object or rejected with an AwsSDK\Exception\AwsException. A handler does not accept a next handler as it is terminal and expected to fulfill a command. If no handler is provided, a default Guzzle handler will be utilized.',
             'fn'       => [__CLASS__, '_apply_handler'],
             'default'  => [__CLASS__, '_default_handler']
         ],
@@ -227,7 +227,7 @@ class ClientResolver
      *
      * @return array Returns the array of provided options.
      * @throws \InvalidArgumentException
-     * @see Aws\AwsClient::__construct for a list of available options.
+     * @see AwsSDK\AwsClient::__construct for a list of available options.
      */
     public function resolve(array $args, HandlerList $list)
     {
@@ -388,7 +388,7 @@ class ClientResolver
             $args['credentials'] = CredentialProvider::defaultProvider($args);
         } else {
             throw new IAE('Credentials must be an instance of '
-                . 'Aws\Credentials\CredentialsInterface, an associative '
+                . 'AwsSDK\Credentials\CredentialsInterface, an associative '
                 . 'array that contains "key", "secret", and an optional "token" '
                 . 'key-value pairs, a credentials provider function, or false.');
         }

@@ -1,7 +1,7 @@
 <?php
-namespace Aws\CognitoIdentityProvider\Exception;
+namespace AwsSDK\CognitoIdentityProvider\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the **Amazon Cognito Identity Provider** service.

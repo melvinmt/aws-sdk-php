@@ -1,7 +1,7 @@
 <?php
-namespace Aws\Signature;
+namespace AwsSDK\Signature;
 
-use Aws\Credentials\CredentialsInterface;
+use AwsSDK\Credentials\CredentialsInterface;
 use Psr\Http\Message\RequestInterface;
 
 /**

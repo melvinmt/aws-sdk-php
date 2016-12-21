@@ -1,7 +1,7 @@
 <?php
-namespace Aws\Sfn\Exception;
+namespace AwsSDK\Sfn\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the **AWS Step Functions** service.

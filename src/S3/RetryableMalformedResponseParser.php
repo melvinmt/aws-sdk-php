@@ -1,10 +1,10 @@
 <?php
-namespace Aws\S3;
+namespace AwsSDK\S3;
 
-use Aws\Api\Parser\AbstractParser;
-use Aws\Api\Parser\Exception\ParserException;
-use Aws\CommandInterface;
-use Aws\Exception\AwsException;
+use AwsSDK\Api\Parser\AbstractParser;
+use AwsSDK\Api\Parser\Exception\ParserException;
+use AwsSDK\CommandInterface;
+use AwsSDK\Exception\AwsException;
 use Psr\Http\Message\ResponseInterface;
 
 /**

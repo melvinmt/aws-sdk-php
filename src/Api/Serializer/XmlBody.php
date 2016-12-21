@@ -1,12 +1,12 @@
 <?php
-namespace Aws\Api\Serializer;
+namespace AwsSDK\Api\Serializer;
 
-use Aws\Api\MapShape;
-use Aws\Api\Service;
-use Aws\Api\Shape;
-use Aws\Api\StructureShape;
-use Aws\Api\ListShape;
-use Aws\Api\TimestampShape;
+use AwsSDK\Api\MapShape;
+use AwsSDK\Api\Service;
+use AwsSDK\Api\Shape;
+use AwsSDK\Api\StructureShape;
+use AwsSDK\Api\ListShape;
+use AwsSDK\Api\TimestampShape;
 use XMLWriter;
 
 /**
@@ -14,7 +14,7 @@ use XMLWriter;
  */
 class XmlBody
 {
-    /** @var \Aws\Api\Service */
+    /** @var \AwsSDK\Api\Service */
     private $api;
 
     /**

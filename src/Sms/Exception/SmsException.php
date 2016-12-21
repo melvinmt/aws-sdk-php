@@ -1,7 +1,7 @@
 <?php
-namespace Aws\Sms\Exception;
+namespace AwsSDK\Sms\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the **AWS Server Migration Service** service.

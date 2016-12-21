@@ -1,7 +1,7 @@
 <?php
-namespace Aws\Credentials;
+namespace AwsSDK\Credentials;
 
-use Aws\Exception\CredentialsException;
+use AwsSDK\Exception\CredentialsException;
 use GuzzleHttp\Promise;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Promise\PromiseInterface;
@@ -35,7 +35,7 @@ class InstanceProfileProvider
         $this->profile = isset($config['profile']) ? $config['profile'] : null;
         $this->client = isset($config['client'])
             ? $config['client'] // internal use only
-            : \Aws\default_http_handler();
+            : \AwsSDK\default_http_handler();
     }
 
     /**

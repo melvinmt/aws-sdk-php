@@ -1,7 +1,7 @@
 <?php
-namespace Aws\Pinpoint\Exception;
+namespace AwsSDK\Pinpoint\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the **Amazon Pinpoint** service.

@@ -1,7 +1,7 @@
 <?php
-namespace Aws\ServiceCatalog\Exception;
+namespace AwsSDK\ServiceCatalog\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the **AWS Service Catalog** service.

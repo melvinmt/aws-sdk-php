@@ -1,7 +1,7 @@
 <?php
-namespace Aws\CloudWatchEvents\Exception;
+namespace AwsSDK\CloudWatchEvents\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the **Amazon CloudWatch Events** service.

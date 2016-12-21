@@ -1,13 +1,13 @@
 <?php
-namespace Aws\Multipart;
+namespace AwsSDK\Multipart;
 
-use Aws\AwsClientInterface as Client;
-use Aws\CommandInterface;
-use Aws\CommandPool;
-use Aws\Exception\AwsException;
-use Aws\Exception\MultipartUploadException;
-use Aws\Result;
-use Aws\ResultInterface;
+use AwsSDK\AwsClientInterface as Client;
+use AwsSDK\CommandInterface;
+use AwsSDK\CommandPool;
+use AwsSDK\Exception\AwsException;
+use AwsSDK\Exception\MultipartUploadException;
+use AwsSDK\Result;
+use AwsSDK\ResultInterface;
 use GuzzleHttp\Promise;
 use GuzzleHttp\Promise\PromiseInterface;
 use GuzzleHttp\Psr7;

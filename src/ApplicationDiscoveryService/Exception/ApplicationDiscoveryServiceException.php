@@ -1,7 +1,7 @@
 <?php
-namespace Aws\ApplicationDiscoveryService\Exception;
+namespace AwsSDK\ApplicationDiscoveryService\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the **AWS Application Discovery Service** service.

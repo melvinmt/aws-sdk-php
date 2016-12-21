@@ -1,5 +1,5 @@
 <?php
-namespace Aws\Api;
+namespace AwsSDK\Api;
 
 /**
  * Base class representing a modeled shape.
@@ -18,19 +18,19 @@ class Shape extends AbstractModel
     public static function create(array $definition, ShapeMap $shapeMap)
     {
         static $map = [
-            'structure' => 'Aws\Api\StructureShape',
-            'map'       => 'Aws\Api\MapShape',
-            'list'      => 'Aws\Api\ListShape',
-            'timestamp' => 'Aws\Api\TimestampShape',
-            'integer'   => 'Aws\Api\Shape',
-            'double'    => 'Aws\Api\Shape',
-            'float'     => 'Aws\Api\Shape',
-            'long'      => 'Aws\Api\Shape',
-            'string'    => 'Aws\Api\Shape',
-            'byte'      => 'Aws\Api\Shape',
-            'character' => 'Aws\Api\Shape',
-            'blob'      => 'Aws\Api\Shape',
-            'boolean'   => 'Aws\Api\Shape'
+            'structure' => 'AwsSDK\Api\StructureShape',
+            'map'       => 'AwsSDK\Api\MapShape',
+            'list'      => 'AwsSDK\Api\ListShape',
+            'timestamp' => 'AwsSDK\Api\TimestampShape',
+            'integer'   => 'AwsSDK\Api\Shape',
+            'double'    => 'AwsSDK\Api\Shape',
+            'float'     => 'AwsSDK\Api\Shape',
+            'long'      => 'AwsSDK\Api\Shape',
+            'string'    => 'AwsSDK\Api\Shape',
+            'byte'      => 'AwsSDK\Api\Shape',
+            'character' => 'AwsSDK\Api\Shape',
+            'blob'      => 'AwsSDK\Api\Shape',
+            'boolean'   => 'AwsSDK\Api\Shape'
         ];
 
         if (isset($definition['shape'])) {

@@ -1,5 +1,5 @@
 <?php
-namespace Aws\Credentials;
+namespace AwsSDK\Credentials;
 
 /**
  * Provides access to the AWS credentials used for accessing AWS services: AWS

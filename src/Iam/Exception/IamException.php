@@ -1,7 +1,7 @@
 <?php
-namespace Aws\Iam\Exception;
+namespace AwsSDK\Iam\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the AWS Identity and Access Management service.

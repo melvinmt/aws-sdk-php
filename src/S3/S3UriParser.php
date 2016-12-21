@@ -1,5 +1,5 @@
 <?php
-namespace Aws\S3;
+namespace AwsSDK\S3;
 
 use GuzzleHttp\Psr7;
 use Psr\Http\Message\UriInterface;

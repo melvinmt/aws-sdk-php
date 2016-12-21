@@ -1,7 +1,7 @@
 <?php
-namespace Aws\Lightsail\Exception;
+namespace AwsSDK\Lightsail\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the **Amazon Lightsail** service.

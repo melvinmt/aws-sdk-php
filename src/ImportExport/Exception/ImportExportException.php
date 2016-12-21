@@ -1,7 +1,7 @@
 <?php
-namespace Aws\ImportExport\Exception;
+namespace AwsSDK\ImportExport\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the **AWS Import/Export** service.

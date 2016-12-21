@@ -1,7 +1,7 @@
 <?php
 namespace Aws;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 use GuzzleHttp\Promise;
 use GuzzleHttp\Promise\PromisorInterface;
 use GuzzleHttp\Promise\RejectedPromise;

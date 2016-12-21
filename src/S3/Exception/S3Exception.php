@@ -1,7 +1,7 @@
 <?php
-namespace Aws\S3\Exception;
+namespace AwsSDK\S3\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the Amazon Simple Storage Service.

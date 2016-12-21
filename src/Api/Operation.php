@@ -1,5 +1,5 @@
 <?php
-namespace Aws\Api;
+namespace AwsSDK\Api;
 
 /**
  * Represents an API operation.

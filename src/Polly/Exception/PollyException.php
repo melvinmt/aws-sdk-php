@@ -1,7 +1,7 @@
 <?php
-namespace Aws\Polly\Exception;
+namespace AwsSDK\Polly\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the **Amazon Polly** service.

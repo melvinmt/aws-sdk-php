@@ -1,5 +1,5 @@
 <?php
-namespace Aws\Endpoint;
+namespace AwsSDK\Endpoint;
 
 /**
  * Represents a section of the AWS cloud.

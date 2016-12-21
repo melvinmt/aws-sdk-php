@@ -1,9 +1,9 @@
 <?php
-namespace Aws\Api\Parser;
+namespace AwsSDK\Api\Parser;
 
-use Aws\Api\Service;
-use Aws\Result;
-use Aws\CommandInterface;
+use AwsSDK\Api\Service;
+use AwsSDK\Result;
+use AwsSDK\CommandInterface;
 use Psr\Http\Message\ResponseInterface;
 
 /**

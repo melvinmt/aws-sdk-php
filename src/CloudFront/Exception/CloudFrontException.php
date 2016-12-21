@@ -1,7 +1,7 @@
 <?php
-namespace Aws\CloudFront\Exception;
+namespace AwsSDK\CloudFront\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the Amazon CloudFront service.

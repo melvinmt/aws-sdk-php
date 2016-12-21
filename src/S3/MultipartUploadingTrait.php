@@ -1,9 +1,9 @@
 <?php
-namespace Aws\S3;
+namespace AwsSDK\S3;
 
-use Aws\CommandInterface;
-use Aws\Multipart\UploadState;
-use Aws\ResultInterface;
+use AwsSDK\CommandInterface;
+use AwsSDK\Multipart\UploadState;
+use AwsSDK\ResultInterface;
 
 trait MultipartUploadingTrait
 {

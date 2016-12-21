@@ -1,7 +1,7 @@
 <?php
-namespace Aws\Rekognition\Exception;
+namespace AwsSDK\Rekognition\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the **Amazon Rekognition** service.

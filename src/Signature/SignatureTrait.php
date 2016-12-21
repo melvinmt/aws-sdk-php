@@ -1,5 +1,5 @@
 <?php
-namespace Aws\Signature;
+namespace AwsSDK\Signature;
 
 /**
  * Provides signature calculation for SignatureV4.

@@ -1,10 +1,10 @@
 <?php
-namespace Aws\Ec2;
+namespace AwsSDK\Ec2;
 
-use Aws\AwsClientInterface;
-use Aws\Signature\SignatureV4;
-use Aws\Endpoint\EndpointProvider;
-use Aws\CommandInterface;
+use AwsSDK\AwsClientInterface;
+use AwsSDK\Signature\SignatureV4;
+use AwsSDK\Endpoint\EndpointProvider;
+use AwsSDK\CommandInterface;
 use GuzzleHttp\Psr7\Uri;
 use Psr\Http\Message\RequestInterface;
 
@@ -56,7 +56,7 @@ class CopySnapshotMiddleware
         // Avoid infinite recursion by flagging the new command.
         $newCmd->__skipCopySnapshot = true;
         // Serialize a request for the CopySnapshot operation.
-        $request = \Aws\serialize($newCmd);
+        $request = \AwsSDK\serialize($newCmd);
         // Create the new endpoint for the target endpoint.
         $endpoint = EndpointProvider::resolve($this->endpointProvider, [
             'region'  => $cmd['SourceRegion'],

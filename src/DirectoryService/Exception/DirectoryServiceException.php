@@ -1,7 +1,7 @@
 <?php
-namespace Aws\DirectoryService\Exception;
+namespace AwsSDK\DirectoryService\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * AWS Directory Service Exception

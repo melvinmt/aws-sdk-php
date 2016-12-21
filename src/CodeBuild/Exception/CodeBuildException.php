@@ -1,7 +1,7 @@
 <?php
-namespace Aws\CodeBuild\Exception;
+namespace AwsSDK\CodeBuild\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the **AWS CodeBuild** service.

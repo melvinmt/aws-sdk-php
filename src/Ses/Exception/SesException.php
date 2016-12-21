@@ -1,7 +1,7 @@
 <?php
-namespace Aws\Ses\Exception;
+namespace AwsSDK\Ses\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the Amazon Simple Email Service.

@@ -1,7 +1,7 @@
 <?php
-namespace Aws\Ssm\Exception;
+namespace AwsSDK\Ssm\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Amazon EC2 Simple Systems Manager exception.

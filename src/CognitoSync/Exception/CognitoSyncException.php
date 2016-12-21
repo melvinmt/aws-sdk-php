@@ -1,7 +1,7 @@
 <?php
-namespace Aws\CognitoSync\Exception;
+namespace AwsSDK\CognitoSync\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the Amazon Cognito Sync service.

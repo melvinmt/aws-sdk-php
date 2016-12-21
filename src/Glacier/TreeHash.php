@@ -1,7 +1,7 @@
 <?php
-namespace Aws\Glacier;
+namespace AwsSDK\Glacier;
 
-use Aws\HashInterface;
+use AwsSDK\HashInterface;
 
 /**
  * Encapsulates the creation of a tree hash from streamed data

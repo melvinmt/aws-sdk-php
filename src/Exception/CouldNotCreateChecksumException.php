@@ -1,5 +1,5 @@
 <?php
-namespace Aws\Exception;
+namespace AwsSDK\Exception;
 
 class CouldNotCreateChecksumException extends \RuntimeException
 {

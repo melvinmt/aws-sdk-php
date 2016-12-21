@@ -1,7 +1,7 @@
 <?php
 namespace Aws;
 
-use Aws\Api\Service;
+use AwsSDK\Api\Service;
 use Psr\Http\Message\RequestInterface;
 
 /**
@@ -27,7 +27,7 @@ class IdempotencyTokenMiddleware
      *  - openssl_random_pseudo_bytes (requires 'openssl' module enabled)
      *  - mcrypt_create_iv (requires 'mcrypt' module enabled)
      *
-     * @param \Aws\Api\Service $service
+     * @param \AwsSDK\Api\Service $service
      * @return callable
      */
     public static function wrap(Service $service)

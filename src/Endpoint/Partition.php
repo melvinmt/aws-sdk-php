@@ -1,5 +1,5 @@
 <?php
-namespace Aws\Endpoint;
+namespace AwsSDK\Endpoint;
 
 use InvalidArgumentException as Iae;
 

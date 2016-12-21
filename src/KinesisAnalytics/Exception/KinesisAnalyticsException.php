@@ -1,7 +1,7 @@
 <?php
-namespace Aws\KinesisAnalytics\Exception;
+namespace AwsSDK\KinesisAnalytics\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the **Amazon Kinesis Analytics** service.

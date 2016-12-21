@@ -1,7 +1,7 @@
 <?php
-namespace Aws\StorageGateway\Exception;
+namespace AwsSDK\StorageGateway\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the AWS Storage Gateway service.

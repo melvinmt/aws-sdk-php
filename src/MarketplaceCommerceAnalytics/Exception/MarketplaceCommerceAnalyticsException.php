@@ -1,7 +1,7 @@
 <?php
-namespace Aws\MarketplaceCommerceAnalytics\Exception;
+namespace AwsSDK\MarketplaceCommerceAnalytics\Exception;
 
-use Aws\Exception\AwsException;
+use AwsSDK\Exception\AwsException;
 
 /**
  * Represents an error interacting with the **AWS Marketplace Commerce Analytics** service.

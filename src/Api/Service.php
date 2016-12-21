@@ -1,9 +1,9 @@
 <?php
-namespace Aws\Api;
+namespace AwsSDK\Api;
 
-use Aws\Api\Serializer\QuerySerializer;
-use Aws\Api\Serializer\Ec2ParamBuilder;
-use Aws\Api\Parser\QueryParser;
+use AwsSDK\Api\Serializer\QuerySerializer;
+use AwsSDK\Api\Serializer\Ec2ParamBuilder;
+use AwsSDK\Api\Parser\QueryParser;
 
 /**
  * Represents a web service API model.
@@ -77,10 +77,10 @@ class Service extends AbstractModel
     public static function createSerializer(Service $api, $endpoint)
     {
         static $mapping = [
-            'json'      => 'Aws\Api\Serializer\JsonRpcSerializer',
-            'query'     => 'Aws\Api\Serializer\QuerySerializer',
-            'rest-json' => 'Aws\Api\Serializer\RestJsonSerializer',
-            'rest-xml'  => 'Aws\Api\Serializer\RestXmlSerializer'
+            'json'      => 'AwsSDK\Api\Serializer\JsonRpcSerializer',
+            'query'     => 'AwsSDK\Api\Serializer\QuerySerializer',
+            'rest-json' => 'AwsSDK\Api\Serializer\RestJsonSerializer',
+            'rest-xml'  => 'AwsSDK\Api\Serializer\RestXmlSerializer'
         ];
 
         $proto = $api->getProtocol();
@@ -107,11 +107,11 @@ class Service extends AbstractModel
     public static function createErrorParser($protocol)
     {
         static $mapping = [
-            'json'      => 'Aws\Api\ErrorParser\JsonRpcErrorParser',
-            'query'     => 'Aws\Api\ErrorParser\XmlErrorParser',
-            'rest-json' => 'Aws\Api\ErrorParser\RestJsonErrorParser',
-            'rest-xml'  => 'Aws\Api\ErrorParser\XmlErrorParser',
-            'ec2'       => 'Aws\Api\ErrorParser\XmlErrorParser'
+            'json'      => 'AwsSDK\Api\ErrorParser\JsonRpcErrorParser',
+            'query'     => 'AwsSDK\Api\ErrorParser\XmlErrorParser',
+            'rest-json' => 'AwsSDK\Api\ErrorParser\RestJsonErrorParser',
+            'rest-xml'  => 'AwsSDK\Api\ErrorParser\XmlErrorParser',
+            'ec2'       => 'AwsSDK\Api\ErrorParser\XmlErrorParser'
         ];
 
         if (isset($mapping[$protocol])) {
@@ -131,10 +131,10 @@ class Service extends AbstractModel
     public static function createParser(Service $api)
     {
         static $mapping = [
-            'json'      => 'Aws\Api\Parser\JsonRpcParser',
-            'query'     => 'Aws\Api\Parser\QueryParser',
-            'rest-json' => 'Aws\Api\Parser\RestJsonParser',
-            'rest-xml'  => 'Aws\Api\Parser\RestXmlParser'
+            'json'      => 'AwsSDK\Api\Parser\JsonRpcParser',
+            'query'     => 'AwsSDK\Api\Parser\QueryParser',
+            'rest-json' => 'AwsSDK\Api\Parser\RestJsonParser',
+            'rest-xml'  => 'AwsSDK\Api\Parser\RestXmlParser'
         ];
 
         $proto = $api->getProtocol();
